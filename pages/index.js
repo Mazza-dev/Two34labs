@@ -114,7 +114,7 @@ export default function Home() {
         <div className="project">
           <a href="https://soramake.xyz" target="_blank" rel="noopener noreferrer" className="project-name">Soramake</a>: Generate videos with Sora2.
         </div>
-        
+        <h2>Mobile Apps</h2>
         <div className="project">
           <span className="project-name">Hopeen</span>: An AI mental health companion.
         </div>
