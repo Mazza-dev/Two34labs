@@ -2,57 +2,150 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <>
       <Head>
         <title>Two34 Labs</title>
         <link rel="icon" href="/favicon.ico" />
+        <style>{`
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          body {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.8;
+            color: #333;
+            background: #fafafa;
+          }
+          
+          .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 80px 20px;
+          }
+          
+          h1 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+          }
+          
+          .tagline {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 3rem;
+          }
+          
+          h2 {
+            font-size: 1rem;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+          }
+          
+          .project {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+          }
+          
+          .project-name {
+            text-decoration: underline;
+            color: #333;
+            cursor: pointer;
+          }
+          
+          .project-name:hover {
+            color: #000;
+          }
+          
+          .project-description {
+            color: #666;
+          }
+          
+          .contact {
+            margin-top: 3rem;
+          }
+          
+          .contact-item {
+            margin-bottom: 0.5rem;
+          }
+          
+          a {
+            color: #333;
+            text-decoration: underline;
+          }
+          
+          a:hover {
+            color: #000;
+          }
+          
+          .footer {
+            margin-top: 4rem;
+            color: #666;
+            font-size: 1rem;
+          }
+          
+          .social-links {
+            margin-top: 1rem;
+          }
+          
+          .social-links a {
+            margin-right: 1rem;
+          }
+        `}</style>
       </Head>
 
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Two34 Labs</h1>
+      <div className="container">
+        <h1>Two34 Labs</h1>
+        <p className="tagline">Building cool stuff,From the +234.</p>
+        
+        <h2>SaaS Projects</h2>
+        
+        <div className="project">
+          <a href="https://zenigrid.com" target="_blank" rel="noopener noreferrer" className="project-name">Zenigrid</a>: Send AI personalized videos to customers.
         </div>
-      </header>
-
-      <main>
-        {<div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <div className="px-4 py-6 sm:px-0">
-            <h2 className="text-2xl font-bold mb-4">About Two34 Labs</h2>
-            <p className="mb-4">
-              Two34 Labs is a product studio that specializes in creating innovative software solutions. Our team of experienced developers and designers are passionate about building products that solve real-world problems.
-            </p>
-            <div className="space-x-4">
-              <button className="bg-black text-white px-4 py-2 rounded">Learn More</button>
-              <button className="bg-white text-black px-4 py-2 rounded border border-black">Contact Us</button>
-            </div>
-          </div>
-          <div className="mt-8 grid gap-6 grid-cols-1 md:grid-cols-3">
-            {['Building a Scalable Web App', 'Designing for Accessibility', 'Optimizing for Performance'].map((title, index) => (
-              <div key={index} className="bg-white overflow-hidden shadow rounded-lg">
-                <div className="px-4 py-5 sm:p-6">
-                  <h3 className="text-lg font-medium text-gray-900">{title}</h3>
-                  <p className="mt-1 text-sm text-gray-500">
-                    Learn how we approach {title.toLowerCase()} in our projects.
-                  </p>
-                </div>
-                <div className="px-4 py-4 sm:px-6">
-                  <a href="#" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                    Read More <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>}
-      </main>
-
-      <footer className="bg-white">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-500 text-sm">
-            © 2024 Two34 Labs. All rights reserved.
-          </p>
+        
+        <div className="project">
+          <a href="https://propnant.com" target="_blank" rel="noopener noreferrer" className="project-name">Propnant</a>: Propnant is an app to generate property walkthrough videos, real estate marketing material, and general designs.
         </div>
-      </footer>
-    </div>
+        
+        <div className="project">
+          <a href="https://soramake.xyz" target="_blank" rel="noopener noreferrer" className="project-name">Soramake</a>: Generate videos with Sora2.
+        </div>
+        
+        <div className="project">
+          <span className="project-name">Hopeen</span>: An AI mental health companion.
+        </div>
+        
+        <div className="project">
+          <span className="project-name">Toketracker</span>: A quit smoking app.
+        </div>
+        
+        <div className="project">
+          <span className="project-name">Littefriends</span>: An app to track your dog's health and daily calories with AI.
+        </div>
+        
+        <div className="contact">
+          <h2>Contact</h2>
+          <div className="contact-item">
+            Email: <a href="mailto:hello@two34labs.com">hello@two34labs.com</a>
+          </div>
+          <div className="contact-item">
+            For partnerships and inquiries: <a href="mailto:partnerships@two34labs.com">partnerships@two34labs.com</a>
+          </div>
+        </div>
+        
+        <div className="footer">
+          <p>We're always building something new. Follow our journey and see what we're working on.</p>
+          <div className="social-links">
+            <a href="https://x.com/two34labs" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://github.com/two34labs" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="/blog">Blog</a>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
