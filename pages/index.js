@@ -124,7 +124,7 @@ export default function Home() {
         </div>
         
         <div className="project">
-          <span className="project-name">Littefriends</span>: An app to track your dog's health and daily calories with AI.
+          <span className="project-name">Littefriends</span>: An app to track your dog&apos;s health and daily calories with AI.
         </div>
         
         <div className="contact">
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
         
         <div className="footer">
-          <p>We're always building something new. Follow our journey and see what we're working on.</p>
+          <p>We&apos;re always building something new. Follow our journey and see what we&apos;re working on.</p>
           <div className="social-links">
             <a href="https://x.com/two34labs" target="_blank" rel="noopener noreferrer">X</a>
             <a href="https://github.com/two34labs" target="_blank" rel="noopener noreferrer">Github</a>
